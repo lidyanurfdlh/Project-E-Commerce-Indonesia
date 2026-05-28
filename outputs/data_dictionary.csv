@@ -1,0 +1,13 @@
+file,column,description
+customer_rfm.csv,customer_id,ID pelanggan sebagai unit analisis utama
+customer_rfm.csv,recency_days,Jarak hari sejak transaksi valid terakhir pelanggan
+customer_rfm.csv,frequency,Jumlah order valid pelanggan
+customer_rfm.csv,monetary,Total subtotal transaksi valid pelanggan
+market_basket_rules.csv,support,Proporsi order yang memuat antecedent dan consequent
+market_basket_rules.csv,confidence,Peluang consequent muncul ketika antecedent muncul
+market_basket_rules.csv,lift,Kekuatan asosiasi dibanding kemunculan acak
+next_best_action.csv,recommended_product,Produk rekomendasi yang sudah diperbaiki agar berbasis rule atau kategori favorit pelanggan
+next_best_action.csv,recommendation_basis,"Sumber logika rekomendasi: product rule, same category fallback, category rule, atau global fallback"
+next_best_action.csv,recommendation_basis,"Sumber rekomendasi utama setelah perbaikan: prioritas kategori favorit, association rule fallback, atau global fallback"
+next_best_action.csv,cross_sell_product_from_rule,Produk cross-sell terpisah yang berasal dari Association Rule agar tidak tercampur dengan rekomendasi utama
+next_best_action.csv,cross_sell_reason,Penjelasan mengapa produk cross-sell muncul dari rule

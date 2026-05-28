@@ -1,0 +1,211 @@
+rule_level,antecedent,consequent,support,confidence,lift,basket_count
+category,Perawatan Tubuh,Bayi,0.1299,0.4167,1.2833,20
+category,Bayi,Perawatan Tubuh,0.1299,0.4,1.2833,20
+category,Alat Tulis,Makanan,0.1688,0.6047,1.2252,26
+category,Makanan,Alat Tulis,0.1688,0.3421,1.2252,26
+category,Rokok,Bayi,0.0909,0.359,1.1056,14
+category,Bayi,Rokok,0.0909,0.28,1.1056,14
+category,Minuman,Makanan,0.1688,0.5,1.0132,26
+category,Makanan,Minuman,0.1688,0.3421,1.0132,26
+category,Rokok,Alat Tulis,0.0714,0.2821,1.0101,11
+category,Alat Tulis,Rokok,0.0714,0.2558,1.0101,11
+product,Beras Pandan Wangi 5kg,Popok MamyPoko,0.0118,1.0,84.5,2
+product,Popok MamyPoko,Beras Pandan Wangi 5kg,0.0118,1.0,84.5,2
+product,Beras Sania 5kg,Susu Frisian Flag 123,0.0118,1.0,84.5,2
+product,Susu Frisian Flag 123,Beras Sania 5kg,0.0118,1.0,84.5,2
+product,Le Minerale,Tahu Putih/pcs,0.0118,1.0,84.5,2
+product,Tahu Putih/pcs,Le Minerale,0.0118,1.0,84.5,2
+product,Sabun Giv,Tisu Basah Sleek,0.0118,1.0,84.5,2
+product,Tisu Basah Sleek,Sabun Giv,0.0118,1.0,84.5,2
+product,Baby Diaper Huggies,Saus Sambal ABC,0.0059,1.0,84.5,1
+product,Shampoo Dove,Kopi Kapal Api,0.0059,1.0,84.5,1
+product,Saus Sambal ABC,Baby Diaper Huggies,0.0059,0.5,84.5,1
+product,Kopi Kapal Api,Shampoo Dove,0.0059,0.5,84.5,1
+product,Daging Sapi/kg,Sampoerna Mild,0.0118,1.0,56.3333,2
+product,Saus Tomat Del Monte,Penghapus Kenko,0.0118,1.0,56.3333,2
+product,Telur Ayam Biasa,Ikan Lele/kg,0.0118,1.0,56.3333,2
+product,Kecap Bango,Buku Gambar Karton,0.0059,1.0,56.3333,1
+product,Clas Mild Menthol,Tisu Bayi Mitu,0.0059,1.0,56.3333,1
+product,Popok Lovies,Shampoo Sunsilk,0.0059,1.0,56.3333,1
+product,Sampoerna Mild,Daging Sapi/kg,0.0118,0.6667,56.3333,2
+product,Penghapus Kenko,Saus Tomat Del Monte,0.0118,0.6667,56.3333,2
+product,Ikan Lele/kg,Telur Ayam Biasa,0.0118,0.6667,56.3333,2
+product,Buku Gambar Karton,Kecap Bango,0.0059,0.3333,56.3333,1
+product,Tisu Bayi Mitu,Clas Mild Menthol,0.0059,0.3333,56.3333,1
+product,Shampoo Sunsilk,Popok Lovies,0.0059,0.3333,56.3333,1
+product,Lipstik Wardah,Sabun Lifebuoy,0.0118,1.0,42.25,2
+product,Teh Sariwangi,Popok Merries,0.0118,1.0,42.25,2
+product,Class Mild,Susu SGM 1+ 400g,0.0118,1.0,42.25,2
+product,Spidol Snowman,Baby Oil Zwitsal,0.0118,1.0,42.25,2
+product,Gudang Garam Signature,Djarum Super,0.0118,1.0,42.25,2
+product,Bumbu Racik Rendang,Sabun Lifebuoy,0.0118,1.0,42.25,2
+product,Face Wash Scarlett,Surya Pro Mild,0.0059,1.0,42.25,1
+product,Sampoerna Hijau,Susu SGM 1+ 400g,0.0059,1.0,42.25,1
+product,Sabun Lifebuoy,Lipstik Wardah,0.0118,0.5,42.25,2
+product,Popok Merries,Teh Sariwangi,0.0118,0.5,42.25,2
+product,Susu SGM 1+ 400g,Class Mild,0.0118,0.5,42.25,2
+product,Baby Oil Zwitsal,Spidol Snowman,0.0118,0.5,42.25,2
+product,Djarum Super,Gudang Garam Signature,0.0118,0.5,42.25,2
+product,Sabun Lifebuoy,Bumbu Racik Rendang,0.0118,0.5,42.25,2
+product,Ayam Broiler/kg,Pensil Faber Castell,0.0059,0.5,42.25,1
+product,Pensil Faber Castell,Ayam Broiler/kg,0.0059,0.5,42.25,1
+product,Gudang Garam Filter,Pulpen Pilot,0.0059,0.5,42.25,1
+product,Pulpen Pilot,Gudang Garam Filter,0.0059,0.5,42.25,1
+product,Djarum Coklat,Pensil Faber Castell,0.0059,0.5,42.25,1
+product,Pensil Faber Castell,Djarum Coklat,0.0059,0.5,42.25,1
+product,Kuku Bima Ginseng,Saus Sambal ABC,0.0059,0.5,42.25,1
+product,Saus Sambal ABC,Kuku Bima Ginseng,0.0059,0.5,42.25,1
+product,Susu Ultra Murni,Tepung Terigu Segitiga,0.0059,0.5,42.25,1
+product,Tepung Terigu Segitiga,Susu Ultra Murni,0.0059,0.5,42.25,1
+product,A Mild White,Kertas HVS 1 rim,0.0059,0.5,42.25,1
+product,Kertas HVS 1 rim,A Mild White,0.0059,0.5,42.25,1
+product,Surya Pro Mild,Face Wash Scarlett,0.0059,0.25,42.25,1
+product,Susu SGM 1+ 400g,Sampoerna Hijau,0.0059,0.25,42.25,1
+product,Tepung Maizena,Pasta Gigi Pepsodent,0.0059,1.0,33.8,1
+product,Tinta Printer Epson,Telur Ayam Kampung,0.0059,1.0,33.8,1
+product,Pasta Gigi Pepsodent,Tepung Maizena,0.0059,0.2,33.8,1
+product,Telur Ayam Kampung,Tinta Printer Epson,0.0059,0.2,33.8,1
+product,Yakult,Mentega Blue Band,0.0178,1.0,28.1667,3
+product,Pocari Sweat,Bubur Bayi Cerelac,0.0059,1.0,28.1667,1
+product,Aqua Botol 600ml,Tempe 1 papan,0.0118,0.6667,28.1667,2
+product,Teh Botol Sosro,Shampoo Clear,0.0118,0.6667,28.1667,2
+product,Nescafe Classic,Kecap ABC,0.0118,0.6667,28.1667,2
+product,Minyak Goreng Bimoli 1L,Teh Kotak,0.0118,0.6667,28.1667,2
+product,Sticky Notes 3M,Bear Brand,0.0118,0.6667,28.1667,2
+product,Mentega Blue Band,Yakult,0.0178,0.5,28.1667,3
+product,Tempe 1 papan,Aqua Botol 600ml,0.0118,0.5,28.1667,2
+product,Shampoo Clear,Teh Botol Sosro,0.0118,0.5,28.1667,2
+product,Kecap ABC,Nescafe Classic,0.0118,0.5,28.1667,2
+product,Teh Kotak,Minyak Goreng Bimoli 1L,0.0118,0.5,28.1667,2
+product,Bear Brand,Sticky Notes 3M,0.0118,0.5,28.1667,2
+product,Coca Cola 240ml,Pembalut Kotex,0.0059,0.5,28.1667,1
+product,Micellar Water Somethinc,Tisu Bayi Mitu,0.0059,0.5,28.1667,1
+product,Susu Dancow 1+ 400g,Gudang Garam Surya,0.0059,0.5,28.1667,1
+product,A Mild White,Penghapus Kenko,0.0059,0.5,28.1667,1
+product,Ayam Broiler/kg,Sticky Notes 3M,0.0059,0.5,28.1667,1
+product,Kertas HVS 1 rim,Ikan Lele/kg,0.0059,0.5,28.1667,1
+product,Kopi Kapal Api,Teh Botol Sosro,0.0059,0.5,28.1667,1
+product,Sabun Cussons Baby,Aqua Botol 600ml,0.0059,0.5,28.1667,1
+product,Djarum Coklat,Tisu Bayi Mitu,0.0059,0.5,28.1667,1
+product,Kuku Bima Ginseng,Sampoerna Mild,0.0059,0.5,28.1667,1
+product,Pembalut Kotex,Coca Cola 240ml,0.0059,0.3333,28.1667,1
+product,Tisu Bayi Mitu,Micellar Water Somethinc,0.0059,0.3333,28.1667,1
+product,Gudang Garam Surya,Susu Dancow 1+ 400g,0.0059,0.3333,28.1667,1
+product,Penghapus Kenko,A Mild White,0.0059,0.3333,28.1667,1
+product,Sticky Notes 3M,Ayam Broiler/kg,0.0059,0.3333,28.1667,1
+product,Ikan Lele/kg,Kertas HVS 1 rim,0.0059,0.3333,28.1667,1
+product,Teh Botol Sosro,Kopi Kapal Api,0.0059,0.3333,28.1667,1
+product,Aqua Botol 600ml,Sabun Cussons Baby,0.0059,0.3333,28.1667,1
+product,Tisu Bayi Mitu,Djarum Coklat,0.0059,0.3333,28.1667,1
+product,Sampoerna Mild,Kuku Bima Ginseng,0.0059,0.3333,28.1667,1
+product,Bubur Bayi Cerelac,Pocari Sweat,0.0059,0.1667,28.1667,1
+product,Sampoerna Kretek,Susu Indomilk 200ml,0.0118,0.5,21.125,2
+product,Susu Indomilk 200ml,Sampoerna Kretek,0.0118,0.5,21.125,2
+product,Kecap ABC,LA Light,0.0118,0.5,21.125,2
+product,LA Light,Kecap ABC,0.0118,0.5,21.125,2
+product,Bumbu Racik Soto,Popok Merries,0.0118,0.5,21.125,2
+product,Popok Merries,Bumbu Racik Soto,0.0118,0.5,21.125,2
+product,Air Zamzam 250ml,Bedak Tabur Wardah,0.0118,0.5,21.125,2
+product,Bedak Tabur Wardah,Air Zamzam 250ml,0.0118,0.5,21.125,2
+product,Sabun Cussons Baby,Susu SGM 1+ 400g,0.0059,0.5,21.125,1
+product,Krim Bayi Cussons,LA Light,0.0059,0.5,21.125,1
+product,Gudang Garam Filter,Baby Oil Zwitsal,0.0059,0.5,21.125,1
+product,Susu Ultra Murni,Djarum Super,0.0059,0.5,21.125,1
+product,Yoghurt Cimory,LA Light,0.0059,0.5,21.125,1
+product,Susu SGM 1+ 400g,Sabun Cussons Baby,0.0059,0.25,21.125,1
+product,LA Light,Krim Bayi Cussons,0.0059,0.25,21.125,1
+product,Baby Oil Zwitsal,Gudang Garam Filter,0.0059,0.25,21.125,1
+product,Djarum Super,Susu Ultra Murni,0.0059,0.25,21.125,1
+product,LA Light,Yoghurt Cimory,0.0059,0.25,21.125,1
+product,Shampoo Sunsilk,Margarin Palmia,0.0118,0.6667,18.7778,2
+product,Margarin Palmia,Shampoo Sunsilk,0.0118,0.3333,18.7778,2
+product,Tepung Terigu Segitiga,Sari Roti Coklat,0.0059,0.5,16.9,1
+product,Susu Dancow 1+ 400g,Pasta Gigi Pepsodent,0.0059,0.5,16.9,1
+product,Sari Roti Coklat,Tepung Terigu Segitiga,0.0059,0.2,16.9,1
+product,Pasta Gigi Pepsodent,Susu Dancow 1+ 400g,0.0059,0.2,16.9,1
+product,Indomie Goreng,Map Plastik Kiky,0.0237,0.6667,16.0952,4
+product,Buku Gambar Karton,Beras Rojolele 5kg,0.0118,0.6667,16.0952,2
+product,Starmild Blue,Bubur Nestle,0.0118,0.6667,16.0952,2
+product,Map Plastik Kiky,Indomie Goreng,0.0237,0.5714,16.0952,4
+product,Beras Rojolele 5kg,Buku Gambar Karton,0.0118,0.2857,16.0952,2
+product,Bubur Nestle,Starmild Blue,0.0118,0.2857,16.0952,2
+product,Buku Tulis Sidu,Gula Pasir Gulaku 1kg,0.0178,1.0,14.0833,3
+product,Masker Wardah,U Mild,0.0118,0.5,14.0833,2
+product,Tempe 1 papan,Gunting Fiskars,0.0118,0.5,14.0833,2
+product,Masker Wardah,Biskuit Bayi Milna,0.0118,0.5,14.0833,2
+product,Yoghurt Cimory,Mentega Blue Band,0.0059,0.5,14.0833,1
+product,Pulpen Pilot,Indomie Goreng,0.0059,0.5,14.0833,1
+product,U Mild,Masker Wardah,0.0118,0.3333,14.0833,2
+product,Gunting Fiskars,Tempe 1 papan,0.0118,0.3333,14.0833,2
+product,Biskuit Bayi Milna,Masker Wardah,0.0118,0.3333,14.0833,2
+product,Pembalut Kotex,Bumbu Racik Soto,0.0059,0.3333,14.0833,1
+product,Minyak Goreng Bimoli 1L,Air Zamzam 250ml,0.0059,0.3333,14.0833,1
+product,Pembalut Kotex,Minyak Telon Cap Lang,0.0059,0.3333,14.0833,1
+product,Gudang Garam Surya,Bear Brand,0.0059,0.3333,14.0833,1
+product,Gula Pasir Gulaku 1kg,Buku Tulis Sidu,0.0178,0.25,14.0833,3
+product,Bumbu Racik Soto,Pembalut Kotex,0.0059,0.25,14.0833,1
+product,Air Zamzam 250ml,Minyak Goreng Bimoli 1L,0.0059,0.25,14.0833,1
+product,Minyak Telon Cap Lang,Pembalut Kotex,0.0059,0.25,14.0833,1
+product,Bear Brand,Gudang Garam Surya,0.0059,0.25,14.0833,1
+product,Mentega Blue Band,Yoghurt Cimory,0.0059,0.1667,14.0833,1
+product,Indomie Goreng,Pulpen Pilot,0.0059,0.1667,14.0833,1
+product,Bubur Bayi Cerelac,Sheet Mask Emina,0.0178,0.5,12.0714,3
+product,Shampoo Clear,Beras Rojolele 5kg,0.0118,0.5,12.0714,2
+product,Teh Kotak,Beras Rojolele 5kg,0.0118,0.5,12.0714,2
+product,Sheet Mask Emina,Bubur Bayi Cerelac,0.0178,0.4286,12.0714,3
+product,Beras Rojolele 5kg,Shampoo Clear,0.0118,0.2857,12.0714,2
+product,Beras Rojolele 5kg,Teh Kotak,0.0118,0.2857,12.0714,2
+product,Telur Ayam Kampung,Gunting Fiskars,0.0118,0.4,11.2667,2
+product,Pasta Gigi Pepsodent,Biskuit Bayi Milna,0.0118,0.4,11.2667,2
+product,Sprite 240ml,Margarin Palmia,0.0118,0.4,11.2667,2
+product,Gunting Fiskars,Telur Ayam Kampung,0.0118,0.3333,11.2667,2
+product,Biskuit Bayi Milna,Pasta Gigi Pepsodent,0.0118,0.3333,11.2667,2
+product,Margarin Palmia,Sprite 240ml,0.0118,0.3333,11.2667,2
+product,Nescafe Classic,Pasta Gigi Pepsodent,0.0059,0.3333,11.2667,1
+product,Pasta Gigi Pepsodent,Nescafe Classic,0.0059,0.2,11.2667,1
+product,Micellar Water Somethinc,Sari Lemon,0.0059,0.5,10.5625,1
+product,Krim Bayi Cussons,Deodorant Rexona,0.0059,0.5,10.5625,1
+product,Air Zamzam 250ml,Susu Indomilk 200ml,0.0059,0.25,10.5625,1
+product,Susu Indomilk 200ml,Air Zamzam 250ml,0.0059,0.25,10.5625,1
+product,Baby Oil Zwitsal,Bedak Tabur Wardah,0.0059,0.25,10.5625,1
+product,Bedak Tabur Wardah,Baby Oil Zwitsal,0.0059,0.25,10.5625,1
+product,Djarum Super,Minyak Telon Cap Lang,0.0059,0.25,10.5625,1
+product,Minyak Telon Cap Lang,Djarum Super,0.0059,0.25,10.5625,1
+product,Bear Brand,Bumbu Racik Soto,0.0059,0.25,10.5625,1
+product,Bumbu Racik Soto,Bear Brand,0.0059,0.25,10.5625,1
+product,Bedak Tabur Wardah,Susu Indomilk 200ml,0.0059,0.25,10.5625,1
+product,Susu Indomilk 200ml,Bedak Tabur Wardah,0.0059,0.25,10.5625,1
+product,Sari Lemon,Micellar Water Somethinc,0.0059,0.125,10.5625,1
+product,Deodorant Rexona,Krim Bayi Cussons,0.0059,0.125,10.5625,1
+product,Sari Roti Coklat,Udang Windu/kg,0.0118,0.4,9.6571,2
+product,Sari Roti Coklat,Map Plastik Kiky,0.0118,0.4,9.6571,2
+product,Sprite 240ml,Sheet Mask Emina,0.0118,0.4,9.6571,2
+product,Udang Windu/kg,Sari Roti Coklat,0.0118,0.2857,9.6571,2
+product,Map Plastik Kiky,Sari Roti Coklat,0.0118,0.2857,9.6571,2
+product,Sheet Mask Emina,Sprite 240ml,0.0118,0.2857,9.6571,2
+product,Surya Pro Mild,Penggaris 30cm,0.0118,0.5,9.3889,2
+product,Sampoerna Kretek,Penggaris 30cm,0.0118,0.5,9.3889,2
+product,Biskuit Bayi Milna,U Mild,0.0118,0.3333,9.3889,2
+product,U Mild,Biskuit Bayi Milna,0.0118,0.3333,9.3889,2
+product,Gunting Fiskars,U Mild,0.0118,0.3333,9.3889,2
+product,U Mild,Gunting Fiskars,0.0118,0.3333,9.3889,2
+product,Penggaris 30cm,Surya Pro Mild,0.0118,0.2222,9.3889,2
+product,Penggaris 30cm,Sampoerna Kretek,0.0118,0.2222,9.3889,2
+product,Mentega Blue Band,Udang Windu/kg,0.0118,0.3333,8.0476,2
+product,Gudang Garam Surya,Beras Rojolele 5kg,0.0059,0.3333,8.0476,1
+product,Udang Windu/kg,Mentega Blue Band,0.0118,0.2857,8.0476,2
+product,Beras Rojolele 5kg,Gudang Garam Surya,0.0059,0.1429,8.0476,1
+product,Minyak Telon Cap Lang,Gula Pasir Gulaku 1kg,0.0118,0.5,7.0417,2
+product,Coca Cola 240ml,Gula Pasir Gulaku 1kg,0.0059,0.5,7.0417,1
+product,Bubur Bayi Cerelac,Deodorant Rexona,0.0118,0.3333,7.0417,2
+product,Margarin Palmia,Sari Lemon,0.0118,0.3333,7.0417,2
+product,Deodorant Rexona,Bubur Bayi Cerelac,0.0118,0.25,7.0417,2
+product,Sari Lemon,Margarin Palmia,0.0118,0.25,7.0417,2
+product,Gula Pasir Gulaku 1kg,Minyak Telon Cap Lang,0.0118,0.1667,7.0417,2
+product,Gula Pasir Gulaku 1kg,Coca Cola 240ml,0.0059,0.0833,7.0417,1
+product,Bubur Nestle,Sheet Mask Emina,0.0118,0.2857,6.898,2
+product,Sheet Mask Emina,Bubur Nestle,0.0118,0.2857,6.898,2
+product,Starmild Blue,Penggaris 30cm,0.0059,0.3333,6.2593,1
+product,Penggaris 30cm,Starmild Blue,0.0059,0.1111,6.2593,1
+product,Surya Pro Mild,Bubur Nestle,0.0059,0.25,6.0357,1
+product,Bubur Nestle,Surya Pro Mild,0.0059,0.1429,6.0357,1

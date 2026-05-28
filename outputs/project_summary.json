@@ -1,0 +1,10 @@
+{
+  "raw_customers": 105,
+  "raw_orders": 226,
+  "valid_orders": 182,
+  "line_items": 338,
+  "customers_in_rfm": 105,
+  "market_basket_rules": 210,
+  "next_best_action_rows": 105,
+  "recommendation_fix": "Primary recommended_product now prioritizes customer favorite category; Association Rule cross-sell is separated into cross_sell_product_from_rule to avoid irrelevant-looking recommendations."
+}
