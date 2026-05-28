@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-st.set_page_config(page_title="Customer ID Analytics Dashboard FIX", page_icon="👤", layout="wide")
+st.set_page_config(page_title="Customer ID Analytics Dashboard", page_icon="👤", layout="wide")
 
 st.markdown("""
 <style>
@@ -33,7 +33,7 @@ CATEGORY_COL = "kategori"
 def load_csv(filename):
     path = OUT_DIR / filename
     if not path.exists():
-        st.error(f"File {filename} tidak ditemukan. Pastikan folder outputs sudah berisi hasil dari notebook Colab FIX.")
+        st.error(f"File {filename} tidak ditemukan. Pastikan folder outputs sudah berisi hasil dari notebook Colab.")
         st.stop()
     return pd.read_csv(path)
 
@@ -82,7 +82,7 @@ for col in ["first_order_date", "last_order_date"]:
 
 st.markdown("""
 <div class="hero">
-<h1>👤 Customer ID Analytics Dashboard — FIX Recommendation Logic</h1>
+<h1>👤 Customer ID Analytics Dashboard — Recommendation Logic</h1>
 <p>Dashboard customer-centric berbasis <b>Customer RFM</b>, <b>Association Rule</b>, dan <b>Nudge / Next Best Action</b>. Versi ini memperbaiki logika rekomendasi agar produk utama mengikuti kategori favorit pelanggan, sedangkan cross-sell dari Association Rule ditampilkan terpisah.</p>
 <span class="badge">Customer ID</span><span class="badge">RFM</span><span class="badge">Association Rule</span><span class="badge">Nudge</span><span class="badge">Fixed Recommendation</span>
 </div>
@@ -97,7 +97,7 @@ with st.sidebar:
     selected_freq = st.slider("Frekuensi transaksi/order", min_freq, max_freq, (min_freq, max_freq))
     customer_search = st.text_input("Cari customer_id", "")
     st.divider()
-    st.write("**Fix utama**")
+    st.write("**utama**")
     st.caption("recommended_product mengikuti favorite_category terlebih dahulu. cross_sell_product_from_rule dipisahkan agar rekomendasi tidak terlihat random.")
 
 filtered = rfm[rfm["segment"].isin(selected_segments)].copy()
@@ -115,7 +115,7 @@ with k3: metric_box("Avg Frequency", f"{filtered['frequency'].mean() if len(filt
 with k4: metric_box("Repeat Rate", f"{(filtered['frequency'].gt(1).mean()*100 if len(filtered) else 0):.1f}%")
 with k5: metric_box("Avg Order Value", rupiah(filtered["avg_order_value"].mean() if len(filtered) else 0))
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["Overview RFM", "Market Basket Rules", "Next Best Action FIX", "Customer 360", "Data & Panduan"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Overview RFM", "Market Basket Rules", "Next Best Action", "Customer 360", "Data & Panduan"])
 
 with tab1:
     st.subheader("1. Segmentasi Customer Berbasis RFM")
