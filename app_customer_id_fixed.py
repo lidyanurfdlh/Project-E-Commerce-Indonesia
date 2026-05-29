@@ -83,13 +83,13 @@ for col in ["first_order_date", "last_order_date"]:
 st.markdown("""
 <div class="hero">
 <h1>👤 Customer ID Analytics Dashboard — Recommendation Logic</h1>
-<p>Dashboard customer-centric berbasis <b>Customer RFM</b>, <b>Association Rule</b>, dan <b>Nudge / Next Best Action</b>. Versi ini memperbaiki logika rekomendasi agar produk utama mengikuti kategori favorit pelanggan, sedangkan cross-sell dari Association Rule ditampilkan terpisah.</p>
-<span class="badge">Customer ID</span><span class="badge">RFM</span><span class="badge">Association Rule</span><span class="badge">Nudge</span><span class="badge">Fixed Recommendation</span>
+<p>Dashboard customer-centric berbasis <b>Customer RFM</b>, <b>Association Rule</b>, dan <b>Nudge / Next Best Action</b>. Tujuannya adalah melakukan segmentasi pelanggan berdasarkan perilaku transaksi, rekomendasi kategori/bundling, serta strategi pesan promosi yang dapat ditindaklanjuti. Logika rekomendasi produk utama mengikuti kategori favorit pelanggan, sedangkan cross-sell dari Association Rule ditampilkan terpisah.</p>
+<span class="badge">Customer ID</span><span class="badge">RFM</span><span class="badge">Association Rule</span><span class="badge">Nudge Theory</span><span class="badge">Next Best Action</span>
 </div>
 """, unsafe_allow_html=True)
 
 with st.sidebar:
-    st.header("Filter")
+    st.header("Filter Dashboard")
     segment_options = sorted(rfm["segment"].dropna().unique().tolist())
     selected_segments = st.multiselect("Segment customer", segment_options, default=segment_options)
     min_freq = int(rfm["frequency"].min()) if len(rfm) else 0
@@ -97,8 +97,8 @@ with st.sidebar:
     selected_freq = st.slider("Frekuensi transaksi/order", min_freq, max_freq, (min_freq, max_freq))
     customer_search = st.text_input("Cari customer_id", "")
     st.divider()
-    st.write("**utama**")
-    st.caption("recommended_product mengikuti favorite_category terlebih dahulu. cross_sell_product_from_rule dipisahkan agar rekomendasi tidak terlihat random.")
+    st.write("**Inti Metode**")
+    st.caption("RFM membentuk segmentasi pelanggan. Association Rule Mining mencari pola kategori yaitu recommended_product mengikuti favorite_category terlebih dahulu dan cross_sell_product_from_rule dipisahkan agar rekomendasi tidak terlihat random. Nudge menyusun pesan dan next best action")
 
 filtered = rfm[rfm["segment"].isin(selected_segments)].copy()
 filtered = filtered[(filtered["frequency"] >= selected_freq[0]) & (filtered["frequency"] <= selected_freq[1])]
@@ -151,8 +151,8 @@ with tab2:
             st.plotly_chart(fig, use_container_width=True)
 
 with tab3:
-    st.subheader("3. Next Best Action per Customer — Sudah Diperbaiki")
-    st.markdown('<div class="warn"><b>Perbaikan:</b> recommended_product sekarang diprioritaskan dari favorite_category pelanggan. Jika customer favoritnya Alat Tulis, rekomendasi utama juga Alat Tulis. Produk lintas kategori dari Association Rule ditampilkan di kolom cross_sell_product_from_rule.</div>', unsafe_allow_html=True)
+    st.subheader("3. Next Best Action per Customer")
+    st.markdown('<div class="warn"><b>Catatan:</b> recommended_product sekarang diprioritaskan dari favorite_category pelanggan. Jika customer favoritnya Alat Tulis, rekomendasi utama juga Alat Tulis. Produk lintas kategori dari Association Rule ditampilkan di kolom cross_sell_product_from_rule.</div>', unsafe_allow_html=True)
     segments_nba = sorted(next_best_action["segment"].dropna().unique().tolist())
     selected_nba_segment = st.selectbox("Segment rekomendasi", ["Semua"] + segments_nba)
     nba_show = next_best_action.copy() if selected_nba_segment == "Semua" else next_best_action[next_best_action["segment"] == selected_nba_segment]
@@ -198,7 +198,7 @@ with tab4:
 with tab5:
     st.subheader("5. Data dan Panduan Baca")
     st.markdown("""
-    **Cara membaca hasil perbaikan:**
+    **Cara membaca:**
     - `favorite_category` adalah kategori dominan pelanggan berdasarkan nilai transaksi.
     - `recommended_product` adalah rekomendasi utama yang mengikuti kategori favorit terlebih dahulu.
     - `recommended_category` menunjukkan kategori dari produk rekomendasi utama.
